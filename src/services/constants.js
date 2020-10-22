@@ -4,10 +4,10 @@ export const NETWORK_TIMEOUT_MESSAGE = "A network timeout has occurred, Please t
 export const UPLOAD_PHOTO_FAIL_MESSAGE = "An error has occurred. The photo was unable to upload.";
 export const NOT_CONNECT_NETWORK = "NOT_CONNECT_NETWORK";
 
-export const apiUrl = "http://3.16.152.120";
-export const imageUrl = "http://3.16.152.120/images";
-export const resumeUrl = "http://3.16.152.120/resume"
-export const quizImgUrl = "http://3.16.152.120/quiz"
+export const apiUrl = "https://www.thaisamsungcareer.com";
+export const imageUrl = "https://www.thaisamsungcareer.com/images";
+export const resumeUrl = "https://www.thaisamsungcareer.com/resume"
+export const quizImgUrl = "https://www.thaisamsungcareer.com/quiz"
 
 
 export const department = {

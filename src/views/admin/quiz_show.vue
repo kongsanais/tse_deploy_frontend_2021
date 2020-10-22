@@ -135,7 +135,7 @@ export default {
   },
   async mounted() {
     var temp_id = this.quiz_id; 
-    
+
     if (temp_id  === undefined || temp_id == null) {
       let q_id = localStorage.getItem("quiz_id");
       this.main_id  = q_id

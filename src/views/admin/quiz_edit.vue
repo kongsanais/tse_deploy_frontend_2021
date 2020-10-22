@@ -264,14 +264,18 @@ import api from "@/services/api";
 export default {
   async mounted() {
     var temp_id = this.quiz_id; 
+    
     if (temp_id  === undefined || temp_id == null) {
       let q_id = localStorage.getItem("quiz_id");
       this.quizdata = await api.getquizShow({ q_id });
-    } else {
+      this.dialog_load.status = false
+    } 
+    else {
       this.dialog_load.status = "teset";
       localStorage.setItem("quiz_id", temp_id);
       let q_id = localStorage.getItem("quiz_id");
       this.quizdata = await api.getquizShow({ q_id });
+      this.dialog_load.status = false
     }
 
     this.title_quiz.quiz_id = this.quizdata._id
