@@ -712,10 +712,9 @@ export default {
       this.tab = "tab-" + tabString;
     },
     onClickMenu(link) {
-      this.dialog_messenger.status = false;
-      if (link == "/login") {
-        this.$router.push(link).catch((err) => {});
-      }
+      this.dialog_messenger.status = false 
+      this.$router.push(link).catch((err) => {});
+      
     },
     onGetGender(){
       var pre_th = this.applicant.th_prefix
